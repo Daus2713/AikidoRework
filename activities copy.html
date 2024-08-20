@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="theme-color" content="#fafafa">
+
+    <title>Home | IIUM Aikido Club</title>
+
+
+    <!-- Add favicons. Based on favicon website. Put icon at the browser tab -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon_io/favicon-32x32.png">
+    <link rel="manifest" href="/img/favicon_io/site.webmanifest">
+    
+    <link rel="stylesheet" href="css/nav.css"> 
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/activities.css">
+    <link rel="stylesheet" href="css/btn-scroll-top.css">
+    <link rel="stylesheet" href="css/head-page.css">
+    <link rel="stylesheet" href="css/latest-activity.css">
+
+    <script src="https://unpkg.com/htmx.org"></script>
+    <!-- Load the history extension for browser navigation -->
+    <script src="https://unpkg.com/htmx.org/dist/ext/htmx-history.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="page-wrapper">
+      <div class="nav-wrapper">
+        <div class="grad-bar"></div>
+        <nav class="navbar">
+          <img src="img/aikido-logo.png" alt="Aikido-Logo">
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="/index.html">Home</a>
+            </li><li class="mob-line"></li>
+            <li class="nav-item">
+              <a href="activities.html">Activities </a>
+            </li><li class="mob-line"></li>
+            <li class="nav-item">
+              <a href="/about-us.html">About Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="head-page">
+        <div id="head-pic">
+          <img src="img/image1.png" alt="Header pic"> <!-- Add image to header -->
+          <div id="pic-overlay"></div> <!-- Overlay for the header image -->
+          <div id="on-image-text">
+              Activities
+              <h1 id="downarrow">&#11167;</h1> <!-- Down arrow below the text -->
+          </div>
+          
+        </div>
+      <div class="end-head"></div>
+      </div>
+      
+      <div id="latest-activity">
+        <!-- Slider main container -->
+        <div class="swiper late-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide late-slide">
+                <div class="late-img-ctnr">
+                  <img class="late-img" src="img/event-images/Aikido Design Contest/Aikido Design Contest.jpg" alt="">
+                </div>
+                <h1 class="late-txt">Card Title 1</h1>
+                <p class="late-desc">This is the text description for card 1.</p>
+                <button class="late-btn">Learn More</button>
+            </div>
+            <div class="swiper-slide late-slide">
+              <div class="late-img-ctnr">
+                <img class="late-img" src="img/event-images/Aikido Induction Training 2.0/Aikido Induction Training 2.0.jpg" alt="">
+              </div>
+              <h1 class="late-txt">Card Title 2</h1>
+              <p class="late-desc">This is the text description for card 2.</p>
+              <button class="late-btn">Learn More</button>
+
+            </div>
+            <div class="swiper-slide late-slide">
+              <div class="late-img-ctnr">
+                <img class="late-img" src="img/event-images/Aikido Talk 6.0/Aikido Talk 6.0.jpg" alt="">
+              </div>
+              <h1 class="late-txt">Card Title 3</h1>
+              <p class="late-desc">This is the text description for card 3.</p>
+              <button class="late-btn">Learn More</button>
+
+            </div>
+            
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+
+
+        
+
+
+
+
+
+
+
+<!-- 
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+              
+              <div class="swiper-slide">
+                  <div class="image-holder"></div>
+                  <h1>Card Title 1</h1>
+                  <p>This is the text description for card 1.</p>
+                  <button class="btn">Learn More</button>
+              </div>
+              
+              <div class="swiper-slide">
+                  <div class="image-holder"></div>
+                  <h1>Card Title 2</h1>
+                  <p>This is the text description for card 2.</p>
+                  <button class="btn">Learn More</button>
+              </div>
+              <
+              <div class="swiper-slide">
+                  <div class="image-holder"></div>
+                  <h1>Card Title 3</h1>
+                  <p>This is the text description for card 3.</p>
+                  <button class="btn">Learn More</button>
+              </div>
+          </div>
+      
+          
+          <div class="swiper-pagination"></div>
+      
+          
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+         -->
+      </div>
+
+
+
+
+
+
+
+      <!-- Footer section with social media links and contact info -->
+      <footer id="sub-info">
+        <div id="follow-link"> <!-- Container for social media links -->
+          <p>Follow us:</p>
+          <a href="https://instagram.com/iiumaikidoclub"
+            target="_blank"><!-- Add club instagram link and icon (display in new tab)-->
+            <img class="socmed-logo" src="img/instagram.png" alt="instagram icon">
+          </a>
+          <a href="https://www.facebook.com/iiumaikidoclub/"
+            target="_blank"><!-- Add club facebook link and icon (display in new tab)-->
+            <img class="socmed-logo" src="img/facebook.png" alt="fb icon">
+          </a>
+          <a href="https://www.youtube.com/@aikidoiium9560"
+            target="_blank"><!-- Add club youtube link and icon (display in new tab)-->
+            <img class="socmed-logo" src="img/youtube.png" alt="youtube icon">
+          </a>
+        </div>
+        <div id="contact"><!-- Add club contact email-->
+          <p>Contact Us: <a href="mailto:aikidoclubiium@gmail.com">aikidoclubiium@gmail.com</a></p>
+        </div>
+      </footer>
+      
+      <!-- Add scroll-to-top button -->
+      <button id="scrollToTop">&#x2B9D;</button>
+
+
+    </div>
+    <script src="/js/nav-action.js"></script>
+    <script src="/js/btn-scroll-to-top.js"></script>
+    <script src="/js/latest-activity.js"></script>
+
+
+    
+  </body>
+</html>

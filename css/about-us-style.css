@@ -1,0 +1,258 @@
+
+  
+.page-wrapper {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav-wrapper {
+    grid-row: 1;
+    background-color: black;
+}
+
+.head-page {
+    grid-row: 2;
+}
+
+.info-club {
+    grid-row: 3;
+    margin-top: 4px;
+    padding: 30px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+#downarrow {
+    cursor: pointer;
+}
+
+
+.image-deco {
+    grid-column: 1/span 3;
+}
+
+.about-txt {
+    grid-column: 4/span 2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.about-txt strong {
+    font-size: 20px;
+    background-color: rgb(177, 112, 112);
+    color: white;
+    padding: 3px 5px;
+}
+
+.parallex-section {
+    grid-row: 4;
+}
+
+/* Styling for the testimonials section */
+#testimonials {
+    grid-row: 5;
+    display: flex;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+}
+
+#testi-title h1{
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Styling for individual testimonial cards */
+.testi-cards {
+    display: flex;
+    padding: 10px 40px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    border-left: solid 7px black;
+
+}
+
+.testi-txt {
+    display: flex;
+    flex-direction: column;
+}
+
+.testi-cards  p {
+    font-style: italic;
+    width: 50vw;
+    text-align: left;
+
+}
+
+.person-info {
+    color: rgba(0, 0, 0, 0.653);
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.join-us {
+    grid-row: 6;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    position: relative;
+    overflow: hidden; /* Ensures any part of the image that extends outside the container will be hidden */
+}
+
+.join-us > img {
+    width: 100%; /* Make the image stretch to fill the container's width */
+    height: 100%; /* Stretch to fill the container's height */
+    object-fit: cover; /* Ensures the image covers the entire container without distortion */
+    position: absolute; /* Position the image within the container */
+    top: 0;
+    left: 0;
+}
+
+.join-txt1, .join-txt2 {
+    position: absolute;
+    z-index: 2; /* Ensure the text is above the image */
+    padding: 10px; /* Add some padding for better text readability */
+}
+
+.join-txt1 {
+    color: black;
+    top: 7vw; /* Position at the top */
+    left: 24vw; /* Position at the left */
+}
+
+.join-txt2 {
+    bottom: 7vw; /* Position at the bottom */
+    right: 8.5vw; /* Position at the right */
+    color: white; /* Text color to contrast with the background image */
+    text-align: center; /* Align the text to the right within this block */
+}
+
+.join-txt2 h1 {
+    margin: 25px 0; /* Remove any margin to prevent unwanted spacing */
+    font-size: 50px;
+
+}
+
+.join-txt2 button {
+    padding: 10px 20px; /* Add some padding for the button */
+    background-color: #ff4b4b; /* Initial button color */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for effects */
+}
+
+.join-txt2 button:active {
+    transform: scale(0.95); /* Slightly reduce the size when clicked */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow for a pressed effect */
+    background-color: #e64343; /* Darken the button color on click */
+}
+
+
+
+  
+
+
+#downarrow {
+    position: relative;
+    animation: moveDownUp 2s infinite ease-in-out;
+}
+
+@keyframes moveDownUp {
+    0% {
+        top: 0; /* Start at original position */
+    }
+    50% {
+        top: 17px; /* Move down 100px */
+    }
+    100% {
+        top: 0; /* Move back to original position */
+    }
+}
+
+  #sub-info{
+    grid-row: 7;
+  }
+
+
+@media only screen and (max-width: 720px) {
+    
+    .info-club {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    
+    .about-txt {
+        row-gap: 50px;
+        line-height: 1.3;
+        font-size: 13px;
+        margin:2px 15px 2px 15px;
+    }
+    
+    .about-txt strong {
+        font-size: 17px;
+        padding: 3px 5px;
+    }
+    
+    
+    .testi-cards {
+        flex-direction: column-reverse;
+        border: solid 1px;
+        padding: 20px 20px;
+    }
+
+    .testi-cards  p {
+        font-style: italic;
+        width: 75vw;
+        text-align: left;
+    
+    }
+
+    .join-txt1 {
+        color: black;
+        top: 20vw; /* Position at the top */
+        left: 10vw; /* Position at the left */
+        font-size: 20px;
+    }
+    
+    .join-txt2 {
+        bottom: 7vw; /* Position at the bottom */
+        right: 17vw; /* Position at the right */
+
+    }
+
+    .join-txt2 h1 {
+        font-size: 40px;
+    }
+
+    
+}
+
