@@ -52,11 +52,11 @@
 /* Styling for the text on the header image */
 #on-image-text {
     position: absolute; /* Position relative to the #head-pic container */
-    top: 55%; /* Center vertically */
+    top: 45%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center precisely using translate */
     color: white; /* Text color */
-    font-size: 24px; /* Font size (adjust as needed) */
+    font-size: 35px; /* Font size (adjust as needed) */
     font-weight: bold; /* Bold font */
     text-align: center; /* Center text within the container */
     z-index: 3; /* Ensure it's above the overlay */
@@ -70,6 +70,14 @@
     font-size: 32px; /* Font size for the arrow (adjust as needed) */
     display: block; /* Ensure the arrow is on a new line */
     margin: 10px auto 0 auto; /* Center horizontally and add margin at the top */
+    background-image: url('../img/downarrow.png');
+    width: 50px;
+    height: 50px;
+    background-color: transparent; /* Ensure background color doesn't cover the image */
+    background-repeat: no-repeat;   /* Prevent repeating if the image is smaller than the element */
+    background-position: center;    /* Position the background image at the center of the element */
+    background-size: cover;
+    
 }
 
 /* Animation for the down arrow */

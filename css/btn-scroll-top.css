@@ -16,8 +16,15 @@
   opacity: 0;/*  Hidden by default */
   z-index: 100;
   transition: opacity 0.3s ease;
+  object-fit: contain;
 }
 /* Smooth transition when hover the button */
 #scrollToTop:hover {
   background-color: #986f2d;
+}
+
+#scrollToTop img {
+
+  width: 30px;
+  height: 30px;
 }

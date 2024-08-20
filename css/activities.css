@@ -14,7 +14,6 @@
 
 .nav-wrapper {
     grid-row: 1;
-    background-color: black;
 }
 
 .head-page {
@@ -69,7 +68,7 @@
     margin: 0;
     font-size: 20px;
     width: 180px;
-    text-align: end;
+    text-align: center;
     
 }
 

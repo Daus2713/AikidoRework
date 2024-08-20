@@ -43,19 +43,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     button.classList.add('late-btn');
                     button.textContent = 'Learn More';
                     if (activity.linkButton.length === 0) {
-                        button.textContent = 'Ended';
                         link.setAttribute('href', 'javascript:void(0)');
-                        link.style.opacity = '0.4';
                     } else {
                         button.textContent = 'Learn more';
                         link.setAttribute('href', activity.linkButton);
                         link.setAttribute('target', '_blank');
+                        link.appendChild(button);
                     }
 
     
-                    link.appendChild(button);
+
     
-                    // Append all elements to the slide
                     slide.appendChild(imgContainer);
                     slide.appendChild(title);
                     slide.appendChild(desc);

@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 const actDate = document.createElement('p');
                 actDate.className = 'act-date';
-                actDate.textContent = item["act-date"];
+                actDate.textContent = "Date: " + item["act-date"];
 
                 const actFileButton = document.createElement('a');
                 const actFile = document.createElement('button');

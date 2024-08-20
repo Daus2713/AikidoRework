@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/image-deco.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/btn-scroll-top.css">
+    <link rel="stylesheet" href="css/join-us.css">
 
     <script src="https://unpkg.com/htmx.org"></script>
     <!-- Load the history extension for browser navigation -->
@@ -57,7 +58,7 @@
 
       <section class="headline">
         <h1>IIUM Aikido Club </h1>
-        <h1 id="downarrow">&#x2B9F;</h1>
+        <div id="downarrow"></div>
       </section>
       <section class="intro">
         <div id="head-intro">
@@ -103,30 +104,30 @@
         </div>
         <div id="card-container"> <!-- Structure container for cards -->
           <div class="card"><!-- Card link to Event and Activities page -->
-            <a href="eventgallery.html" class="card-link"><!-- Link to the page -->
+            <a href="activities.html" class="card-link"><!-- Link to the page -->
               <div class="card-overlay"></div> <!-- Overlay for darken effect on the card -->
               <div class="card-txt"> <!-- Add text to the card -->
-                Aikido Club Gallery
+                Club Activities
               </div>
               <!-- Add background image to the card -->
               <div class="card-image" style="background-image: url('img/gallery-card.jpeg')"></div>
             </a>
           </div>
           <div class="card"><!-- Card link to Organizational chart page -->
-            <a href="chart2.html" class="card-link"><!-- Link to the page -->
+            <a href="mainboard.html" class="card-link"><!-- Link to the page -->
               <div class="card-overlay"></div><!-- Overlay for darken effect on the card -->
               <div class="card-txt"><!-- Add text to the card -->
-                Aikido Club Mainboard
+                Club Mainboard
               </div>
               <!-- Add background image to the card -->
               <div class="card-image" style="background-image: url('img/item-info1.jpg')"></div>
             </a>
           </div>
           <div class="card"> <!-- Card link to facilities and training page -->
-            <a href="faci.html" class="card-link"><!-- Link to the page -->
+            <a href="about-us.html" class="card-link"><!-- Link to the page -->
               <div class="card-overlay"></div><!-- Overlay for darken effect on the card -->
               <div class="card-txt"><!-- Add text to the card -->
-                Aikido Club Training Info
+                About IIUM Aikdo Club
               </div>
               <!-- Add background image to the card -->
               <div class="card-image" style="background-image: url('img/item-info3.jpeg')"></div>
@@ -134,6 +135,15 @@
           </div>
         </div>
       </aside>
+
+      <div class="join-us">
+        <div class="join-txt1"><h1>Become our member!</h1></div>
+        <div class="join-txt2">
+          <h1>Join Us Now!</h1>
+          <a href="https://forms.gle/hRwYhA1K96wzq28f6" target="_blank"><button>Fill in Registration Form</button></a>
+        </div>
+        <img src="img/join-us.jpg" alt="">
+      </div>
 
       <!-- Footer section with social media links and contact info -->
       <footer id="sub-info">
@@ -158,7 +168,7 @@
       </footer>
         
       <!-- Add scroll-to-top button -->
-      <button id="scrollToTop">&#x2B9D;</button>
+      <button id="scrollToTop"><img src="img/uparrow.png" alt=""></button>
 
 
     </div>
