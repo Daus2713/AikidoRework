@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     
     // Fetch JSON data
-    fetch('../past-club-activities.json') // Replace with the correct path to your JSON file
+    fetch('past-club-activities.json') // Replace with the correct path to your JSON file
         .then(response => response.json())
         .then(data => {
             // Initial load
