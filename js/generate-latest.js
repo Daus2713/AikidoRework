@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Fetch the JSON data
-    fetch('AikidoRework/latest-club-activities.json')
+    fetch('AikidoRework/latest-club-activities.jsonzXzX')
         .then(response => response.json())
         .then(data => {
             // Get the swiper wrapper where slides will be inserted
