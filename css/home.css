@@ -44,6 +44,7 @@
     align-items: center;
     align-content: center;
     row-gap: 7px;
+    width: 100%;
 
 }
 
@@ -84,12 +85,8 @@
     background-color: #010505;
     height: 1px;
     align-self: center;
-    width: 305px;
-    animation: shorten 8s infinite; /* Add animation here */
-}
-
-#head-intro .deco-line{
     width: 500px;
+    animation: shorten 8s infinite; /* Add animation here */
 }
 
 @keyframes shorten {
@@ -97,7 +94,7 @@
       /* Default length */
     }
     50% {
-      width: 32em; /* Shortened length */
+      width: 320px; /* Shortened length */
     }
 }
 
@@ -262,16 +259,13 @@
 
     #head-intro {
         font-size: 12px;
-        width: 310px;
+        width: 100%;
     }
 
-    #head-intro .deco-line{
-        width: 230px;
-    }
 
     .deco-line {
-        width: 200px;
-        animation: shorten 8s infinite;
+        width: 70vw;
+        animation: shorten 7s infinite;
     }
 
     @keyframes shorten {
@@ -279,7 +273,7 @@
           /* Default length */
         }
         50% {
-          width: 290px; /* Shortened length */
+          width: 40vw; /* Shortened length */
         }
 
     }
