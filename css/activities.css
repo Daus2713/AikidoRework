@@ -1,4 +1,7 @@
+/* 
+    Code for the Activities page structure 
 
+*/
   
 .page-wrapper {
     display: grid;
@@ -138,10 +141,6 @@
         width:70vw;
     
     }
-
-
-
-
     
 }
 
