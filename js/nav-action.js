@@ -1,4 +1,5 @@
-
+// Code for toggling state of page navigation
+// Function : Respond to user device and change the state of navigation part
   
   $('.menu-toggle').click(function(){
      $(".nav").toggleClass("mobile-nav");

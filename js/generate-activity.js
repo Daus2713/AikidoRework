@@ -1,3 +1,6 @@
+// Code for generating structure for past activities section in Activities
+// Function : Get selection from dropdown part and generate the content using 
+// past-club-activities.json
 
 document.addEventListener('DOMContentLoaded', function() {
     const dropdownMenu = document.getElementById('dropdown-menu');

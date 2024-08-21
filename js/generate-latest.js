@@ -1,3 +1,6 @@
+// Code for generating structure for latest activities section in Activities
+// Function : Auto generate the latest activities based on data in latest-club-activities.json
+
 document.addEventListener('DOMContentLoaded', function() {
     // Fetch the JSON data
     fetch('latest-club-activities.json')
@@ -50,17 +53,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         link.setAttribute('target', '_blank');
                         link.appendChild(button);
                     }
-
-    
-
     
                     slide.appendChild(imgContainer);
                     slide.appendChild(title);
                     slide.appendChild(desc);
                     slide.appendChild(link);
     
-    
-                    
+      
                     // Append the slide to the swiper wrapper
                     swiperWrapper.appendChild(slide);
                     
